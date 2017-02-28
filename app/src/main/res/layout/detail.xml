@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detailLayout">
+
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center_horizontal">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="Loading..."
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/top_background">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="公司详情"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="false"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/maoboli">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/logoBg"
+                        android:minWidth="200dp"
+                        android:minHeight="100dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TableLayout
+                android:background="@drawable/detail_border"
+                android:shrinkColumns="*"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TableRow android:padding="6dp">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="公司信息"/>
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/detail_bottom_border">
+                    <TextView
+                        android:id="@+id/des"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp">
+                    <TextView
+                        android:id="@+id/pic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:background="@drawable/detail_border"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="基础信息" />
+
+                <TableRow
+                    android:padding="6dp"
+                    android:background="@drawable/detail_bottom_border">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地址："
+                        android:textColor="#777777" />
+                    <TextView
+                        android:id="@+id/area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="地址"/>
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="行业："
+                        android:textColor="#777777" />
+                    <TextView
+                        android:id="@+id/category"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="行业"/>
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp"
+                    android:background="@drawable/detail_bottom_border">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="阶段："
+                        android:textColor="#777777" />
+                    <TextView
+                        android:id="@+id/stage_simplify"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="阶段"/>
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司："
+                        android:textColor="#777777" />
+                    <TextView
+                        android:id="@+id/company"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="公司"/>
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp"
+                    android:background="@drawable/detail_bottom_border">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="网址："
+                        android:textColor="#777777" />
+                    <TextView
+                        android:id="@+id/url"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="官网"/>
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="创办时间："
+                        android:textColor="#777777" />
+                    <TextView
+                        android:id="@+id/found_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="创办时间"/>
+                </TableRow>
+
+                <TableRow
+                    android:padding="6dp"
+                    android:background="@drawable/detail_bottom_border">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="产品列表："
+                        android:textColor="#777777" />
+                        <TextView
+                            android:id="@+id/product_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="产品列表"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:background="@drawable/detail_border"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="融资信息" />
+
+                <ListView
+                    android:id="@+id/financingView"
+                    android:background="@drawable/detail_bottom_border"
+                    android:padding="6dp"
+                    android:focusable="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

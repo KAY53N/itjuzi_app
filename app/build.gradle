@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+    defaultConfig {
+        applicationId "xujiantao.com.chuangwen"
+        minSdkVersion 11
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile files('libs/android-saripaar.jar')
+    compile project(':PagerSlidingTabStrip')
+    compile project(':PullToRefresh')
+    compile files('E:/AndroidStudioProjects/ChuangWen2/lib/Fastjson.jar')
+    compile files('E:/AndroidStudioProjects/ChuangWen2/lib/Volley.jar')
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:design:22.2.0'
+    //可修改版本号为自己匹配
+    compile files('E:/AndroidStudioProjects/ChuangWen2/lib/httpcore.jar')
+    compile files('E:/AndroidStudioProjects/ChuangWen2/lib/android-async-http.jar')
+    compile files('E:/AndroidStudioProjects/ChuangWen2/lib/httpclient.jar')
+    compile files('E:/AndroidStudioProjects/ChuangWen2/lib/fastjson.jar')
+    compile files('E:/AndroidStudioProjects/ChuangWen2/lib/gson.jar')
+    compile files('E:/AndroidStudioProjects/ChuangWen2/lib/sun.misc.BASE64Decoder.jar')
+}
+
+
+allprojects {
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+        }
+    }
+}

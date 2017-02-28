@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:paddingBottom="50dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <RelativeLayout android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/top_background"
+            android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/search_btn_background"
+                android:text="取消"/>
+
+        <RelativeLayout android:id="@+id/rlSearchFrameDelete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@id/btnCancel">
+
+            <EditText android:id="@+id/etSearch"
+                      android:layout_width="fill_parent"
+                      android:layout_height="30dp"
+                      android:singleLine="true"
+                      android:imeOptions="actionSearch"
+                      android:background="@drawable/search_frame"
+                      android:layout_marginRight="10dp"
+                      android:paddingLeft="32dp"
+                      android:textSize="12sp"
+                      android:hint="请输入文字..."/>
+
+            <ImageView android:id="@+id/ivDeleteText"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:src="@drawable/delete"
+                       android:layout_centerInParent="true"
+                       android:paddingRight="20dp"
+                       android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top" >
+    </ListView>
+
+</RelativeLayout>

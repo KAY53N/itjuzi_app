@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">融资查询</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="signup_link"><u>帐号注册</u></string>
+    <string name="forget_link"><u>密码找回</u></string>
+    <string name="signin_link"><u>帐号登录</u></string>
+    <string name="pact">注册代表你已同意用户协议</string>
+
+
+    <string name="register_name_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+
+</resources>
