@@ -1,5 +1,8 @@
 ## 自己练手开发的一个Android新闻客户端
 
+###
+[http://rz.xujiantao.com](http://rz.xujiantao.com "http://rz.xujiantao.com")<br>
+
 ### 预览图：
 ![rzchaxun1](http://www.xujiantao.com/zuopin/image/max/rzchaxun1.png)<br>
 
