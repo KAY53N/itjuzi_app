@@ -4,13 +4,7 @@
 download: [http://rz.xujiantao.com](http://rz.xujiantao.com "http://rz.xujiantao.com")<br>
 
 ### 预览图：
-![rzchaxun1](http://www.xujiantao.com/zuopin/image/max/rzchaxun1.png)<br>
-
-![rzchaxun2](http://www.xujiantao.com/zuopin/image/max/rzchaxun2.png)<br>
-
-![rzchaxun3](http://www.xujiantao.com/zuopin/image/max/rzchaxun3.png)<br>
-
-![rzchaxun4](http://www.xujiantao.com/zuopin/image/max/rzchaxun4.png)<br>
+![rzchaxun](http://www.xujiantao.com/public/images/chuangwen_yl.jpg)<br>
 
 ### 依赖：
 >android-async-http.jar<br>
